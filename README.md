@@ -70,8 +70,7 @@ load relevant QA modules
 ticket / PRD / evidence
 ```
 
-The setup is intentionally lightweight: **ChatGPT Plus + GitHub**.  
-The benefit for me is cleaner conversations, easier versioning, and QA rules that live in Git instead of inside one long prompt.
+I mostly use **ChatGPT Plus + GitHub** for this. Git keeps the QA rules versioned; ChatGPT handles the reasoning; GitHub Actions is just the glue for the parts ChatGPT cannot reach directly.
 
 `ChatGPT Web` `ChatGPT Plus` `Repo-driven workflow` `Jira` `Confluence` `ClickUp` `Figma`
 
@@ -83,6 +82,8 @@ The benefit for me is cleaner conversations, easier versioning, and QA rules tha
 **Because “there is an attachment” is not the same as actually seeing the attachment.**
 
 A GitHub Actions bridge that retrieves authenticated binary evidence from Jira, Confluence and ClickUp so the actual file can be inspected instead of relying only on metadata.
+
+I use GitHub Actions here because the job is short-lived, needs credentials, and only runs when evidence is requested — no separate server needed.
 
 `GitHub Actions` `REST API` `Artifacts` `Visual Evidence`
 
