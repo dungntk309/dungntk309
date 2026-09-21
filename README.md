@@ -78,7 +78,10 @@ ticket / PRD / evidence
 
 The point is not token cost — I use ChatGPT Web. The win is cleaner conversations, less prompt stuffing, easier versioning, and QA rules that live in Git instead of being trapped inside one giant message.
 
-`ChatGPT Web` `Repo-driven workflow` `Modular context` `Jira` `Confluence` `ClickUp` `Figma`
+**The setup is intentionally lightweight: ChatGPT Plus + GitHub.**  
+No separate LLM API billing is needed for my QA reasoning loop.
+
+`ChatGPT Web` `ChatGPT Plus` `Repo-driven workflow` `Modular context` `Jira` `Confluence` `ClickUp` `Figma`
 
 <sub>🔒 Private — contains internal workflow material.</sub>
 
