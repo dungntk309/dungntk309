@@ -1,88 +1,145 @@
-# Hi, I'm Dung 👋
+<div align="center">
 
-**Senior QA/QC Engineer** working mainly with fintech/payment products, API/web/mobile testing, automation, performance testing, defect investigation, and release validation.
+# Nguyễn Thị Kim Dung
 
-I also build small QA tools and experiments with AI.
+**Senior QA/QC Engineer · Fintech / Payment · AI-assisted QA**
 
-> **I vibe-code the implementation, then QA the behavior.**
+I test products for a living.  
+When a QA workflow annoys me enough, I **vibe-code a tool for it**.
 
-## Vibe-coded QA projects
+<br/>
 
-These are side projects I build mostly with AI-assisted / vibe coding to solve problems I run into while doing QA work.
+![QA](https://img.shields.io/badge/QA%2FQC-Senior-2ea44f?style=flat-square)
+![Fintech](https://img.shields.io/badge/domain-fintech%20%2F%20payment-555?style=flat-square)
+![AI Assisted](https://img.shields.io/badge/building%20with-AI-7c3aed?style=flat-square)
+![Playwright](https://img.shields.io/badge/Playwright-45ba4b?style=flat-square&logo=playwright&logoColor=white)
 
-### TrustMeImQA
-A version-controlled QA workflow source for AI agents.
-
-It connects requirement analysis, gap detection, visual evidence, testcase planning, and testcase generation across Jira, Confluence, ClickUp, and Figma.
-
-**Why I made it:** I was tired of pasting huge QA prompts into every chat and getting inconsistent results.
-
-`AI-assisted` · `QA workflow` · `Jira` · `Confluence` · `ClickUp` · `Figma`
+</div>
 
 ---
 
-### Archaeopteryx
-A binary evidence bridge for Jira, Confluence, and ClickUp.
+## 👋 About me
 
-It uses GitHub Actions to retrieve authenticated attachments and package the real files for AI/Vision analysis without putting credentials in the chat.
+Most of my day-to-day work is still very QA:
 
-**Why I made it:** connectors could tell the AI that a screenshot existed, but the AI still couldn't actually see it.
+- analyze requirements and hunt for gaps;
+- test API / Web / Mobile flows;
+- validate payment and transaction behavior end-to-end;
+- investigate defects through API, DB, logs and integrations;
+- automate repetitive checks;
+- support regression, release validation and delivery.
 
-`GitHub Actions` · `API` · `Artifacts` · `Visual Evidence`
+The coding part is mostly **AI-assisted / vibe-coded**.
 
----
+I am not trying to pretend every side project below was handcrafted line-by-line.
 
-### Playwright Visual Bridge
-A bridge between AI-generated Playwright work and private/internal web environments.
-
-The browser runs where the VPN, session, and credentials already exist, then returns sanitized evidence instead of exposing the private environment to the AI.
-
-**Why I made it:** chat AI can write Playwright, but it usually cannot run against the internal app I am testing.
-
-`Playwright` · `TypeScript` · `Self-hosted Runner` · `AI`
-
----
-
-### Figma QA Push
-A Figma plugin + local relay for pushing selected design frames into Jira as QA evidence.
-
-**Why I made it:** design evidence should be attached to the ticket with traceable identity instead of living in screenshots scattered across chats.
-
-`Figma Plugin` · `Jira` · `Docker` · `Visual QA`
-
----
-
-### [Atlassian Visual Bridge](https://github.com/dungntk309/Atlassian-Visual-Bridge)
-Public reference version of the authenticated Jira / Confluence attachment bridge.
-
-`GitHub Actions` · `Jira API` · `Confluence API`
-
----
-
-## The bigger idea
+My loop is usually:
 
 ```text
-Jira / Confluence / ClickUp / Figma
-                │
-                ▼
-          real evidence
-                │
-                ▼
-              AI
-                │
-                ▼
-       QA reasoning / tests
+QA pain point
+    ↓
+"this is annoying"
+    ↓
+vibe-code a tool with AI
+    ↓
+break it like a QA
+    ↓
+fix / simplify / repeat
 ```
 
-I am experimenting with one simple idea:
+---
 
-**AI is much more useful for QA when it can work from real, traceable evidence instead of copied context and guesses.**
+## 🧪 Side quests I vibe-coded
 
-## QA stack
+### 🧠 TrustMeImQA
+**Because copy-pasting a giant QA prompt every time got old.**
 
-`REST Assured` · `Postman` · `Newman` · `Selenium` · `Appium` · `Playwright`  
-`k6` · `Gatling` · `SQL` · `Jira` · `Xray` · `Confluence`
+A repo-driven QA workflow for AI agents: requirement analysis, gap detection, evidence review, QC scope and testcase generation.
 
-## Contact
+`Jira` `Confluence` `ClickUp` `Figma` `AI-assisted QA`
+
+<sub>🔒 Private — contains internal workflow material.</sub>
+
+---
+
+### 🦖 Archaeopteryx
+**Because “there is an attachment” is not the same as actually seeing the attachment.**
+
+A GitHub Actions bridge that retrieves authenticated binary evidence from Jira, Confluence and ClickUp so AI/Vision can inspect the real file.
+
+`GitHub Actions` `REST API` `Artifacts` `Visual Evidence`
+
+<sub>🔒 Private — used with internal/authenticated sources.</sub>
+
+---
+
+### 🎭 Playwright Visual Bridge
+**Because AI can write Playwright, but my internal app is behind VPN and credentials.**
+
+Run Playwright where the private environment already exists, then send sanitized execution/UI evidence back to the AI.
+
+`Playwright` `TypeScript` `Self-hosted Runner` `Private Environment`
+
+<sub>🔒 Private — execution layer for private environments.</sub>
+
+---
+
+### 🎨 Figma QA Push
+**Because sending screenshots around manually is boring.**
+
+A Figma plugin + local relay that pushes selected design frames into Jira as traceable QA evidence.
+
+`Figma Plugin` `Jira` `Docker` `Visual QA`
+
+<sub>🔒 Private.</sub>
+
+---
+
+### 🔌 [Atlassian Visual Bridge](https://github.com/dungntk309/Atlassian-Visual-Bridge)
+**The public one.**
+
+A lightweight reference implementation for retrieving authenticated Jira / Confluence attachments through GitHub Actions.
+
+`GitHub Actions` `Jira API` `Confluence API`
+
+---
+
+## 🧩 What all of these are really about
+
+```text
+requirement ───────┐
+design ────────────┤
+attachment ────────┼──► real evidence ─► AI ─► QA reasoning
+private browser ───┤
+logs / runtime ────┘
+```
+
+I am mostly experimenting with one question:
+
+> **How useful can AI become for QA when it gets real, traceable evidence instead of just copied context?**
+
+---
+
+## 🛠 QA toolbox
+
+**Testing**  
+`REST Assured` `Postman` `Newman` `Selenium` `Appium` `Playwright`
+
+**Performance / Data**  
+`k6` `Gatling` `SQL` `Database Validation` `Logs`
+
+**Workflow**  
+`Jira` `Xray` `Confluence` `Agile / Scrum`
+
+**Things I somehow ended up touching while vibe-coding**  
+`TypeScript` `Python` `Bash` `Docker` `GitHub Actions`
+
+---
+
+<div align="center">
+
+### QA first. Code when needed. AI whenever it saves me from repetitive work.
 
 [LinkedIn](https://linkedin.com/in/dung-nguyen-kim) · [Email](mailto:dungntk309@gmail.com)
+
+</div>
