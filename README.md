@@ -52,7 +52,7 @@ fix / simplify / repeat
 ## 🧪 Side quests I vibe-coded
 
 ### 🧠 TrustMeImQA
-**Because copy-pasting a giant QA prompt every time got old — and burned context for no good reason.**
+**Because copy-pasting a giant QA prompt into every chat got old.**
 
 A repo-driven QA workflow for AI agents: requirement analysis, gap detection, evidence review, QC scope and testcase generation.
 
@@ -76,9 +76,9 @@ load only the QA modules needed
 ticket / PRD / evidence
 ```
 
-Less repeated prompt context, easier versioning, and the QA rules live in Git instead of inside one giant message.
+The point is not token cost — I use ChatGPT Web. The win is cleaner conversations, less prompt stuffing, easier versioning, and QA rules that live in Git instead of being trapped inside one giant message.
 
-`ChatGPT Web` `Repo-driven workflow` `Context efficiency` `Jira` `Confluence` `ClickUp` `Figma`
+`ChatGPT Web` `Repo-driven workflow` `Modular context` `Jira` `Confluence` `ClickUp` `Figma`
 
 <sub>🔒 Private — contains internal workflow material.</sub>
 
@@ -140,7 +140,7 @@ I am mostly experimenting with two questions:
 
 > **How useful can AI become for QA when it gets real, traceable evidence instead of just copied context?**
 
-> **How much repeated prompt/context can I remove by treating Git as the workflow source and ChatGPT Web as the reasoning client?**
+> **How much cleaner can the workflow get if Git stores the QA rules and ChatGPT Web only loads what the current task actually needs?**
 
 ---
 
