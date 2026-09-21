@@ -11,8 +11,9 @@ When a QA workflow annoys me enough, I **vibe-code a tool for it**.
 
 ![QA](https://img.shields.io/badge/QA%2FQC-Senior-2ea44f?style=flat-square)
 ![Fintech](https://img.shields.io/badge/domain-fintech%20%2F%20payment-555?style=flat-square)
+![Selenium](https://img.shields.io/badge/Selenium-Automation-43B02A?style=flat-square&logo=selenium&logoColor=white)
+![Appium](https://img.shields.io/badge/Appium-Mobile%20Automation-662D91?style=flat-square)
 ![AI Assisted](https://img.shields.io/badge/building%20with-AI-7c3aed?style=flat-square)
-![Playwright](https://img.shields.io/badge/Playwright-45ba4b?style=flat-square&logo=playwright&logoColor=white)
 
 </div>
 
@@ -24,12 +25,12 @@ Most of my day-to-day work is still very QA:
 
 - analyze requirements and hunt for gaps;
 - test API / Web / Mobile flows;
+- build and maintain **web/mobile automation mainly with Selenium and Appium**;
 - validate payment and transaction behavior end-to-end;
 - investigate defects through API, DB, logs and integrations;
-- automate repetitive checks;
 - support regression, release validation and delivery.
 
-The coding part is mostly **AI-assisted / vibe-coded**.
+The coding part of my side projects is mostly **AI-assisted / vibe-coded**.
 
 I am not trying to pretend every side project below was handcrafted line-by-line.
 
@@ -103,6 +104,8 @@ A GitHub Actions bridge that retrieves authenticated binary evidence from Jira, 
 
 Run Playwright where the private environment already exists, then send sanitized execution/UI evidence back to the AI.
 
+This is one of my **vibe-coded experiments**, not the main automation stack I use day-to-day.
+
 `Playwright` `TypeScript` `Self-hosted Runner` `Private Environment`
 
 <sub>🔒 Private — execution layer for private environments.</sub>
@@ -149,8 +152,11 @@ I am mostly experimenting with two questions:
 
 ## 🛠 QA toolbox
 
-**Testing**  
-`REST Assured` `Postman` `Newman` `Selenium` `Appium` `Playwright`
+**Web / Mobile Automation**  
+`Selenium` `Appium` `TestNG`
+
+**API Testing / Automation**  
+`REST Assured` `Postman` `Newman`
 
 **Performance / Data**  
 `k6` `Gatling` `SQL` `Database Validation` `Logs`
@@ -159,7 +165,7 @@ I am mostly experimenting with two questions:
 `Jira` `Xray` `Confluence` `Agile / Scrum`
 
 **Things I somehow ended up touching while vibe-coding**  
-`TypeScript` `Python` `Bash` `Docker` `GitHub Actions`
+`Playwright` `TypeScript` `Python` `Bash` `Docker` `GitHub Actions`
 
 ---
 
